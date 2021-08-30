@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://eskipaper.com/images/circle-background-4.jpg);
+    background-color: lavender;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.calculadora {
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color: #242742;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 400px;
+}
+
+input.visor {
+    color: white;
+    background-image: linear-gradient(45deg, orange, deeppink);
+    height: 280px;
+    text-align: right;
+    font-size: 90px;
+    overflow-y: none;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+input.visor::-webkit-scrollbar-corner-bottom {
+    background-color: red;
+    scroll-margin-bottom: 5px;
+}
+
+.btncabecalho {
+    background-color: #242742;
+    border-radius: 40px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    border: 1px outset #242742;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    padding: 20px 40px 20px 40px;
+    font-size: 25px;
+}
+
+td:active {
+    background-color: #535b6d;
+}
+
+td.igual {
+    background-image: linear-gradient(45deg, orange, deeppink);
+    border-bottom-right-radius: 20px;
+}
+
+td.zero {
+    border-bottom-left-radius: 20px;
+}

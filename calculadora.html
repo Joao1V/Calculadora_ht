@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="calculadora">
+
+        <button class="btncabecalho" type="button">+</button>
+        <button class="btncabecalho" type="button">-</button>
+
+        <input class="visor" type="text" name="visor">
+
+        <table>
+
+            <tr>
+                <td onclick="clean()" id="limpar" colspan="2">C</td>
+                <td onclick="insert('/')">÷</td>
+                <td onclick="insert('*')">x</td>
+            </tr>
+
+            <tr>
+                <td onclick="insert('7')">7</td>
+                <td onclick="insert('8')">8</td>
+                <td onclick="insert('9')">9</td>
+                <td onclick="insert('+')">+</td>
+            </tr>
+
+            <tr>
+                <td onclick="insert('4')">4</td>
+                <td onclick="insert('5')">5</td>
+                <td onclick="insert('6')">6</td>
+                <td onclick="insert('-')">-</td>
+            </tr>
+
+            <tr>
+                <td onclick="insert('1')">1</td>
+                <td onclick="insert('2')">2</td>
+                <td onclick="insert('3')">3</td>
+                <td onclick="calcular()" class="igual" rowspan="2">=</td>
+            </tr>
+
+            <tr>
+                <td onclick="insert('0')" class="zero" colspan="2">0</td>
+                <td onclick="insert(',')">,</td>
+            </tr>
+    </div>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
